@@ -1,0 +1,305 @@
+:root {
+  --white: #000;
+  --dark-blue: #ffff;
+  --tan: #0000;
+
+  --border-radius: 50px;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Header contains text and navigation  */
+.navbar {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: #04AA6D;
+  color: white;
+  width: 100%;
+  height: 140px;
+  padding: 20px;
+  margin-top: 0px;
+
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: none;
+ 
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+
+  color: white;
+  text-align: center;
+  padding: 14px 16px 14px 16px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}
+
+.avatar {
+  height: 100%;
+  border-radius: 50%;
+  padding: 20px;
+}
+.avatar-container{
+  
+}
+
+img {
+  opacity: 0.7;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+nav {
+  flex: -1;
+  background-color: #b9c6ae;
+  padding: 0px;
+  text-align: right;
+  display: flex;
+  background-color: var(--black);
+
+
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 1000px;
+  position: absolute;
+  right: 84%;
+  margin-left: -3px;
+  top: 100;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  
+  background-color: white;
+  padding: 40px;
+  text-align: left;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+  margin-top: 20px;
+
+}
+
+.hero {
+  
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/banner/matrix.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+  color: white;
+  background-color: #04AA6D;
+  height: 200px;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.module{
+  display: flex;
+  flex-wrap: wrap
+}
+
+.aside-avatar{
+  flex:1;
+}
+
+.module-projects{
+  flex:3
+}
+
+.hero-content {
+  background-color: #04AA6D;
+  padding: 25px 20px;
+}
+
+.thumbnails {
+  
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #04AA6D;
+  padding: 0px;
+  width: 30%;
+  margin: 20px;
+  
+}
+
+.featured-img{
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card>img {
+  width: 100%;
+}
+
+.parent-container {
+
+  display: flex;
+  flex-direction: column;
+
+}
+.child-container {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.child-container>img{
+
+flex: 1;
+flex-basis: 40%;
+max-width: 325px;
+margin: 20px;
+}
+a img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+
+/* Container holding the image and the text */
+.container {
+  position: left;
+  width: 1920px;
+  height: 1080px;
+  
+}
+
+/* Text in text block over images */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  background-color: #04AA6D;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.text-box{
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.text-box>p{
+  max-width: 64%
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container{
+  display: flex;
+ 
+
+}
+
+.section-title{
+  font-size: 20px;
+  flex-direction: column;
+  margin-top: 200px;
+  text-align: right;
+  padding: 14px 16px;
+  margin-left: 3%;
+  flex: 0 0 60%;
+}
+.section-content{
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  main,
+  header,
+  aside,
+  nav {
+    flex-direction: column;
+  }
+}
